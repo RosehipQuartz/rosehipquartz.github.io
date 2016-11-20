@@ -1,0 +1,51 @@
+body {
+font-family: 'Droid Serif', Georgia, serif;
+width: 100%;
+height: 100%;
+padding: 0px;
+background-image: url(../img/bg.jpg);
+background-color: #f0f0f0;
+}
+
+#wrap {
+margin: 0 auto;
+padding: 0px;
+text-align: center;
+width: 80%;
+height: 100%;
+background-color: #f0f0f0;
+background-image: none;
+}
+
+#incMenu {
+clear: both;
+float: left;
+width: 20%;
+}
+
+nav ul {
+list-style-type:none;
+clear: both;
+float: left;
+}
+nav ul li {
+clear: both;
+float: left;
+}
+
+main {
+clear: none;
+float: left;
+width: 75%;
+text-align: left;
+}
+
+video {
+width: 100%;
+}
+
+#incFooter {
+clear: both;
+float: none;
+width: 100%;
+}
