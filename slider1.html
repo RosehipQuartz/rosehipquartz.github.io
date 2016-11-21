@@ -6,9 +6,9 @@
 
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-<title>Strawberry Photon - Gallery</title>
+<title>Strawberry Photon - Slider 1</title>
 
-<meta name="description" content="Plugin gallery">
+<meta name="description" content="Image slider">
 <meta name="keywords" content="HTML,CSS,JavaScript">
 <meta name="author" content="Rosalind Tattersdill">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,7 +18,7 @@
 <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
 <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
 <link rel="manifest" href="/manifest.json">
-<meta name="theme-color" content="#f0f0f0">
+<meta name="theme-color" content="#fbf8f9">
 <link rel="stylesheet" href="css/normalize.css">
 
 <link rel="stylesheet" href="css/main.css">
@@ -30,6 +30,7 @@
 
 <script src="js/vendor/jquery-1.12.0.min.js"></script>
 
+<script type="text/javascript" src="js/imagesliderpager.js"></script>
 <script>$(function(){$("#incHeader").load("header.html");});</script>
 <script>$(function(){$("#incFooter").load("footer.html");});</script>
 <script>$(function(){$("#incMenu").load("menu.html");});</script>
@@ -45,18 +46,28 @@
 <![endif]-->
 
 
-
 <div id="incHeader"></div>
 <div id="incMenu"></div>
-
 <main>
-<h2>Gallery</h2>
-<p>View <a href="slider1.html">image slider 1</a>.</p>
+<h2>Javascript slider</h2>
 
-
+<div class="container">
+	<div class="slider_wrapper">
+		<ul id="image_slider">
+			<li><img src="img/slide1.jpg"></li>
+			<li><img src="img/slide2.jpg"></li>
+			<li><img src="img/slide3.jpg"></li>
+			<li><img src="img/slide4.jpg"></li>
+			<li><img src="img/slide5.jpg"></li>
+		</ul>					
+		<span class="nvgt" id="prev"></span>
+		<span class="nvgt" id="next"></span>		
+	</div>
+	<ul id="pager">
+	</ul>
+</div>
 
 </main>
-
 <div id="incFooter"></div>
 </div>
 
