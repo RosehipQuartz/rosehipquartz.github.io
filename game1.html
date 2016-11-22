@@ -6,10 +6,10 @@
 
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-<title>Strawberry Photon - Contact</title>
+<title>Strawberry Photon - Game 1</title>
 
-<meta name="description" content="Contact information">
-<meta name="keywords" content="HTML,CSS,JavaScript,contact">
+<meta name="description" content="Javascript game">
+<meta name="keywords" content="HTML,CSS,JavaScript">
 <meta name="author" content="Rosalind Tattersdill">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -30,8 +30,6 @@
 
 <script src="js/vendor/jquery-1.12.0.min.js"></script>
 
-<script src="js/main.js"></script>
-
 <script>$(function(){$("#incHeader").load("header.html");});</script>
 <script>$(function(){$("#incFooter").load("footer.html");});</script>
 <script>$(function(){$("#incMenu").load("menu.html");});</script>
@@ -47,20 +45,44 @@
 <![endif]-->
 
 
-
 <div id="incHeader"></div>
 <div id="incMenu"></div>
 
 <main>
-<h2>Contact</h2>
-<p>Please contact me at <script type="text/javascript">
-document.write('<a href="mailto:'+efirst + '@' + elast+'?subject=Strawberry Photon">'+efirst + '@' + elast+'<\/a>');
+<h2>Rock Paper Scissors</h2>
+<script>
+var userChoice = prompt("Do you choose rock, paper or scissors?");
+document.write("<p>You chose: " + userChoice + "</p>");
+
+var computerChoice = Math.random();
+if (computerChoice < 0.34) {computerChoice = "rock";} 
+else if(computerChoice <= 0.67) {computerChoice = "paper";} 
+else {computerChoice = "scissors";} 
+document.write("<p>Computer chose: " + computerChoice + "</p>");
+
+var compare = function(choice1, choice2) {
+    if (choice1 === choice2) {document.write("<p>The result is a tie!</p>");}
+    else if (choice1 === "rock") {
+        if (choice2 === "scissors") {document.write("<p>Rock wins</p>");}
+        else {document.write("<p>Paper wins</p>");}
+        }
+     else if (choice1 === "paper") {
+        if (choice2 === "rock") {document.write("<p>Paper wins</p>");}
+        else {document.write("<p>Scissors wins</p>");}
+        }
+    else if (choice1 === "scissors") {
+        if (choice2 === "rock") {document.write("<p>Rock wins</p>");}
+        else {document.write("<p>Scissors wins</p>");}
+        }
+    else {document.write("<p>Nobody wins</p>");}
+    };
+compare(userChoice, computerChoice);
 </script>
- with any questions or comments.</p>
 
+</main>
+<div id="incFooter"></div>
+</div>
 
-
-</main><div id="incFooter"></div></div>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
 
 <script src="js/plugins.js"></script>
